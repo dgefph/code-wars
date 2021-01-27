@@ -46,4 +46,7 @@ const quarterOf = (month) => {
       else return "A";
   }
 
-  
+  //return  character given ASCII number
+  function getChar(c) {
+    return String.fromCharCode(c)
+  }
