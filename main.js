@@ -50,3 +50,9 @@ const quarterOf = (month) => {
   function getChar(c) {
     return String.fromCharCode(c)
   }
+
+
+  //return the neg or pos opposite of the value in the array
+  function invert(array) {
+    return array.map(i => 0 - i);
+ }
