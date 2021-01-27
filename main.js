@@ -56,3 +56,10 @@ const quarterOf = (month) => {
   function invert(array) {
     return array.map(i => 0 - i);
  }
+
+ // 1/27 code wars
+
+// find cuboid volume difference given two 3-item arrays, a & b
+ function findDifference(a, b) {
+    return Math.abs((a.reduce((previous, current)=> previous*current, 1)) - (b.reduce((previous, current)=> previous*current, 1)))
+  }
