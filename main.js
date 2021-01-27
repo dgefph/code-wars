@@ -17,3 +17,21 @@ const quarterOf = (month) => {
       return 4
     }
   }
+
+  //Give a grade based on the average of 3 scores
+
+  function getGrade (s1, s2, s3) {
+    let check = ((s1+s2+s3)/3)
+    
+    if (check >= 90 && check <= 100){
+      return 'A'
+    } else if (check >= 80 && check < 90){
+      return 'B'
+    } else if (check >= 70 && check < 80){
+      return 'C'
+    } else if (check >= 60 && check < 70){
+      return 'D'
+    } else if (check >= 0 && check < 60) {
+      return 'F'
+    }
+  }
