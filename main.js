@@ -70,3 +70,9 @@ const solve = (x, y) => x/y
 
 //get the opposite of a number given a number
 const opposite = number => -number;
+
+// sum ONLY the positive numbers in a mixed array
+// used filter + reduce both
+function positiveSum(arr) {
+    return arr.filter(x => x > 0).reduce((a, c) => a + c, 0)
+  }
