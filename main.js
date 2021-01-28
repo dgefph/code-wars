@@ -67,3 +67,6 @@ const quarterOf = (month) => {
 //Divide
 
 const solve = (x, y) => x/y
+
+//get the opposite of a number given a number
+const opposite = number => -number;
