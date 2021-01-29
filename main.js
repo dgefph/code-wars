@@ -77,4 +77,12 @@ function positiveSum(arr) {
     return arr.filter(x => x > 0).reduce((a, c) => a + c, 0)
   }
 
-  //Find the first non-consecutive numbers
+  //Find the first non-consecutive numbers in an array of ascending #s
+  function firstNonConsecutive(arr) {
+    for(let i = 0; i < arr.length - 1; i++) {
+      if (arr[i] + 1 !== arr[i + 1] {
+        return arr[i + 1]
+      }
+    }
+    return null; 
+  }
