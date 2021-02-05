@@ -86,3 +86,5 @@ function positiveSum(arr) {
     }
     return null; 
   }
+
+  //return the average of an array rounded down
