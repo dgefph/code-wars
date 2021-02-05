@@ -108,7 +108,10 @@ function positiveSum(arr) {
 function past(h, m, s){
   return (s*1000)+(m*60000)+(h*3600000)
 }
-
+    //refactored
+    function past(h, m, s){
+      return ((h*3600)+(m*60)+s)*1000;
+    }
 
 
 
