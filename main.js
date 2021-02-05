@@ -88,7 +88,12 @@ function positiveSum(arr) {
   }
 
   //return the average of an array rounded down
-  function getAverage(marks){
+  function getAverage(marks) {
     sum = marks.reduce((a, b) => a + b, 0)
     return Math.floor(sum/marks.length)
+  }
+
+  //Reverse strings in array
+  function fixTheMeerkat(arr) {
+    return arr.reverse();
   }
