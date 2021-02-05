@@ -99,11 +99,15 @@ function positiveSum(arr) {
     return arr.reverse();
   }
 
+  //if a bonus, multiply salary by 10
   function bonusTime(salary, bonus) {
     return bonus ? `\u00A3${salary*10}` : `\u00A3${salary}`
   }
 
-
+//return num of miliseconds past midnight
+function past(h, m, s){
+  return (s*1000)+(m*60000)+(h*3600000)
+}
 
 
 
