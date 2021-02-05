@@ -80,11 +80,12 @@ function positiveSum(arr) {
   //Find the first non-consecutive numbers in an array of ascending #s
   function firstNonConsecutive(arr) {
     for(let i = 0; i < arr.length - 1; i++) {
-      if (arr[i] + 1 !== arr[i + 1] {
+      if (arr[i] + 1 !== arr[i + 1]) {
         return arr[i + 1]
       }
-    }
+    
     return null; 
+    }
   }
 
   //return the average of an array rounded down
@@ -97,3 +98,16 @@ function positiveSum(arr) {
   function fixTheMeerkat(arr) {
     return arr.reverse();
   }
+
+  function bonusTime(salary, bonus) {
+    return bonus ? `\u00A3${salary*10}` : `\u00A3${salary}`
+  }
+
+
+
+
+
+
+
+
+ 
