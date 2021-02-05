@@ -88,3 +88,7 @@ function positiveSum(arr) {
   }
 
   //return the average of an array rounded down
+  function getAverage(marks){
+    sum = marks.reduce((a, b) => a + b, 0)
+    return Math.floor(sum/marks.length)
+  }
