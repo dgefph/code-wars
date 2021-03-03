@@ -137,3 +137,9 @@ function paperwork(n, m) {
 function reversedWords(str) {
   return str.split(' ').reverse().join(' ')
 }
+
+//Name: Grasshopper - Terminal game move function
+//Description: return the space number if die is cast 2
+function move(position, roll) {
+  return position + roll * 2
+}
