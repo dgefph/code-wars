@@ -178,3 +178,24 @@ var summation = function (num) {
 
   return result
 }
+
+//Name: Convert Boolean to a string
+
+//My solution
+function booleanToString(b) {
+  if (b === true) {
+    return 'true'
+  } else {
+    return 'false'
+  }
+}
+
+//better solution
+function booleanToString(b) {
+  return b.toString()
+}
+
+//even cleverer solution IMO
+function booleanToString(b) {
+  return b ? 'true' : 'false'
+}
