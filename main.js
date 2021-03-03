@@ -143,3 +143,25 @@ function reversedWords(str) {
 function move(position, roll) {
   return position + roll * 2
 }
+//refactored, not my own
+const move = (position, roll) => position + roll * 2
+
+//Name: reverse a string
+function solution(str) {
+  return str.split('').reverse().join('')
+}
+//refactored, not my own
+const solution = (str) => str.split('').reverse().join('')
+
+//Name: is he gonna survive
+//Description: each dragon takes 2 bullets to be defeated
+function hero(bullets, dragons) {
+  if (bullets / 2 >= dragons) {
+    return true
+  } else {
+    return false
+  }
+}
+
+//refactored, not my own
+const here = (bullets, dragons) => bullets >= dragons * 2
