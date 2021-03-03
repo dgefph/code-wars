@@ -115,3 +115,25 @@ function past(h, m, s) {
   return (h * 3600 + m * 60 + s) * 1000
 }
 //testing testing testing
+
+//3/3/21
+
+//Name: 8kyu Beginner Series #1 School Paperwork
+//Description: Decide how many pieces of paper per student
+function paperwork(n, m) {
+  if (n > 0 && m > 0) {
+    return n * m
+  } else {
+    return 0
+  }
+}
+//refactored, not my own
+function paperwork(n, m) {
+  return n > 0 && m > 0 ? n * m : 0
+}
+
+//Name: Reversed Words
+//Description: Reverse the order of words in a sentence
+function reversedWords(str) {
+  return str.split(' ').reverse().join(' ')
+}
