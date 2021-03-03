@@ -165,3 +165,16 @@ function hero(bullets, dragons) {
 
 //refactored, not my own
 const here = (bullets, dragons) => bullets >= dragons * 2
+
+//Name: Grasshopper-summation
+//Description: Create a program that finds summation of every number from 1 to num.
+
+//completely failed lol
+var summation = function (num) {
+  let result = 0
+  for (var i = 1; i <= num; i++) {
+    result += i
+  }
+
+  return result
+}
