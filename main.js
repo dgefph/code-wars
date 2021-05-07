@@ -200,7 +200,7 @@ function booleanToString(b) {
   return b ? 'true' : 'false'
 }
 
-// 8kyu Alan Partridge II - Apple Turnover
+//string 1 -- 8kyu Alan Partridge II - Apple Turnover  
 function apple(x) {
   if (x ** 2 > 1000) {
     return "It's hotter than the sun!!"
@@ -216,9 +216,78 @@ function apple(x) {
     : 'Help yourself to a honeycomb Yorkie for the glovebox.'
 }
 
-//Next code
-function apple(x) {
-  return x ** 2 > 1000
-    ? "It's hotter than the sun!!"
-    : 'Help yourself to a honeycomb Yorkie for the glovebox.'
+//string 2 -- 8kyu Returning strings
+function greet(name){
+  return `Hello, ${name} how are you doing today?`
+}
+
+//string 3 -- 8kyu Get those initials
+function abbrevName(name){
+  let names = name.split(' ')
+  let firstLetter = names[0].charAt(0).toUpperCase()
+  let secondLetter = names[1].charAt(0).toUpperCase()
+  return `${firstLetter}.${secondLetter}`
+}
+//refactored suggestion
+function abbrevName(name){
+
+  let nameArray = name.split(" ");
+  return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+}
+
+//string 4 --  8kyu The wide mouth frog!
+//first try with ternary
+function mouthSize(animal) {
+  return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
+}
+
+//string 5 -- 8kyu Template Strings
+var TempleStrings = function(obj, feature) {
+  return `${obj} are ${feature}`
+}
+//refactor
+let TempleStrings = (obj, feature) => `${obj} are ${feature}`;
+
+//array 1 -- 8kyu pick a set of first elements
+//definitely did not understand this one. Google helped but need to revisit
+function first(arr, n=1) {
+  return arr.slice(0,n);
+ }
+
+ //array 2 -- 8kyu Swap Values
+ //needed help with this one as well... Must need to review array methods
+ function swapValues(arr) {
+  return arr.reverse()
+}
+
+//array 3 -- 8kyu Create powers of 2 JS
+function powersOfTwo(n){
+  let result = [];
+  for (let i = 0; i <= n; i++) {
+    result.push(Math.pow(2, i));
+  }
+  return result;
+}
+//refactored / better solution
+function powersOfTwo(n){
+  return Array.from({length: n + 1}, (a, b) => 2**b)
+}
+
+
+//array 4 -- Filter out the geese
+function gooseFilter (birds) {
+  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter(a => !geese.includes(a)) 
+  // return an array containing all of the strings in the input array except those that match strings in geese
+};
+
+//refactor -- I liked this one better, more descriptive
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  return birds.filter( bird => geese.indexOf(bird) < 0 );
+};
+
+//array 5 - Convert number to reversed array of digits
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
 }
