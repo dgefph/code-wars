@@ -291,3 +291,8 @@ function gooseFilter (birds) {
 function digitize(n) {
   return String(n).split('').map(Number).reverse()
 }
+
+
+function digitize(n) {
+  return String(n).split('').map(Number).reverse()
+}
