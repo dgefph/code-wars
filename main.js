@@ -292,4 +292,16 @@ function digitize(n) {
   return String(n).split('').map(Number).reverse()
 }
 
+// return a multiplaction table with integers 1-10 and a given number 1-10 
+const multiTable = (number) => {
+  let table = '';
+  
+  for(let i = 1; i <= 10; i++) {
+    table += `${i} * ${number} = ${i * number}${i < 10 ? '\n' : ''}`; 
+  }
 
+  return table;
+}
+
+//refactored = into something I would do 
+const multiTable = n => ([1,2,3,4,5,6,7,8,9,10].map(i=>`${i} * ${n} = ${i*n}`)).join('\n')
