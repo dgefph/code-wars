@@ -292,7 +292,7 @@ function digitize(n) {
   return String(n).split('').map(Number).reverse()
 }
 
-// return a multiplaction table with integers 1-10 and a given number 1-10 
+//return a multiplaction table with integers 1-10 and a given number 1-10 
 const multiTable = (number) => {
   let table = '';
   
@@ -303,5 +303,12 @@ const multiTable = (number) => {
   return table;
 }
 
-//refactored = into something I would do 
-const multiTable = n => ([1,2,3,4,5,6,7,8,9,10].map(i=>`${i} * ${n} = ${i*n}`)).join('\n')
+    //refactored = into something I would do 
+    const multiTable = n => ([1,2,3,4,5,6,7,8,9,10].map(i=>`${i} * ${n} = ${i*n}`)).join('\n')
+
+
+//Sort vector of strings alphabetically by ASCII and join separated by string of '***'
+
+function twoSort(s) {
+  return s.sort()[0].split('').join('***');
+}
