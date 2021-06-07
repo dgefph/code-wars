@@ -312,3 +312,17 @@ const multiTable = (number) => {
 function twoSort(s) {
   return s.sort()[0].split('').join('***');
 }
+
+// Given an array of numbers, check if any of the numbers are the character codes for lower case vowels (a, e, i, o, u). If they are, change the array value to a string of that vowel.
+
+//my solution
+function isVow(a){
+  return a.map(a => (a == 101 || a == 117 || a == 97 || a == 105 || a == 111) ? String.fromCharCode(a) : a);
+}
+//refactored - 
+function isVow(a){
+  return  a.map(
+      charCode =>
+        /[aeiou]/.test(String.fromCharCode(charCode))
+          ? String.fromCharCode(charCode)
+          : charCode)}
